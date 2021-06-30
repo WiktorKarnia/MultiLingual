@@ -25,6 +25,8 @@ It's a sample website with database functionality that allows you to sing up for
     <img src="images/Preview.jpg" alt="Preview" width="1000" height="600">
   </a>
 </p>
+
+
 ## Getting Started
 
 To get a local copy up and running follow these simple steps.
