@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MultiLingual</title>
+        <meta charset="UTF-8">
+        <link rel="shortcut icon" href="ikona.png">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="header">
+            <div class="logo_container">
+                <h1 onclick="window.location.href='index.htm'">Multi<span>Lingual</span></h1>
+            </div>
+            <ul class="nawigation">
+                <a onclick="window.location.href='index.htm'"><li>Strona główna</li></a>
+                <a onclick="window.location.href='signup.php'"><li>Zapisy</li></a>
+                <a onclick="window.location.href='about.htm'"><li>O nas</li></a>
+                <a onclick="window.location.href='contact.htm'"><li>Kontakt</li></a>
+        </div>
+        <div class="welcome">
+            <h1>Witaj na stronie naszej szkoły językowej on-line</h1><br><h1 class="name">Multi<span>Lingual</span></h1><br>
+            <h3>W naszej ofercie znajdziesz trzymiesięczne internetowe kursy języka Angielskiego, Niemieckiego, Rosyjskiego, Hiszpańskiego oraz Francuskiego.
+                Każdy zainteresowany znajdzie u nas coś dla siebie, gdyż oferujemy kursy na poziomach od poziomu podstawowego (A1) aż do poziomu zaawansowanego (C2)
+                Po zakończeniu kursu każdy uczestnik podchodzi do egzaminy na odpowiednim poziomie po którym otrzymuje certyfikat ukończenia kursu.
+                Wszystie kursy odbywają sie przez internet, dwa dni w tygodnu po 1.5 godziny. Dzień tygodnia oraz godzina odbywania się zajęć jest do wyboru.
+                Zajęcia odbywają się od poniedziałku do piątku w godzinach porannych (7:00 - 8:30) i wieczornych (21:00 - 22:30).
+                Możliwe jest również wybranie indywidualnego toku nauczania gdzie godziny spotkań można ustalać dowolnie.
+            </h3><br>
+            <h2>Jeśli zaiteresowała Cię nasza oferta nie zwlekaj dłużej zgłoś swoją chęć udziału w kursie!</h><br><br>
+            <button class="button" onclick="window.location.href='signup.php'">Zapisz się</button>
+        </div>
+        <div class="before_chart"><h2>Jeśli wiesz że chcesz nauczyć się nowego języka, lecz nie jesteś pewien/pewna który wybrać spójrz na poniższy diagram i wyciągnij wnioski.</h2><br>
+        <h1>Liczba ludzi posługujących się poszczególnymi językami</h1></1>
+        </div>
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script type="text/javascript">
+          google.charts.load('current', {'packages':['corechart']});
+          google.charts.setOnLoadCallback(drawChart);
+    
+          function drawChart() {
+    
+            var data = google.visualization.arrayToDataTable([
+              ['Język', 'Ludzie'],
+              ['Angielski', 984000000],
+              ['Niemiecki', 130000000],
+              ['Rosyjski', 268000000],
+              ['Hiszpański', 528000000],
+              ['Francuski', 230000000]
+              
+            ]);
+    
+            var options = {
+              
+              titleTextStyle:{color:'white', fontSize: 20},
+              backgroundColor: "transparent",
+              colors: ['#70d6ff', '#ff70a6', '#ff9770', '#ffd670', '#e9ff70'],
+              fontSize: 21,
+              is3D: true,
+              legend: {position:'top', textStyle: {color:'white', fontSize: 20}}
+            };
+    
+            var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+    
+            chart.draw(data, options);
+          }
+        </script>
+        <div id="piechart"></div>
+        <div class="footer">&copy; 2021 Wiktor Karnia, Uniwersytet Ekonomiczy w Krakowie </div>
+    </body>
+</html>
