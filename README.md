@@ -22,7 +22,7 @@
 It's a sample website with database functionality that allows you to sing up for language courses. It's an HTML site customed visualy with CSS and also has some PHP functionality thanks to which the whole "sign up" thing works.  
 <p align="center">
   <a href="http://v-ie.uek.krakow.pl/~s215117/ProjektPPIV/index.htm">
-    <img src="images/Preview.jpg" alt="Preview" width="610" height="320">
+    <img src="images/Preview.jpg" alt="Preview" width="720" height="420">
   </a>
 </p>
 ## Getting Started
